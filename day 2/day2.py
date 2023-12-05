@@ -131,7 +131,7 @@ def part_2():
     info = get_info(lines)
     
     count = 0
-    for game_id, game in info.items():
+    for _, game in info.items():
         minimum_set_of_cubes = get_minimum_set_of_cubes(game)
         power_of_minimum_set = get_power_of_minimum_set(minimum_set_of_cubes)
         
